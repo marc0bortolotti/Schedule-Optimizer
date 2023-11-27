@@ -13,6 +13,14 @@ import variator
 import selector
 import replacer
 
+kwargs = {}
+
+# PATH
+results_path = 'results/single_optimization'
+final_schedule_path = results_path+'/final_schedule.xlsx'
+kwargs['results_path'] = results_path
+kwargs['source_path'] = 'source/courses.xlsx'
+
 # DEFAULT OPTIMIZATION PARAMETERS 
 stop_interrupt = False
 default_max_generations = 50
@@ -21,16 +29,9 @@ default_num_offspring = 100
 default_room_size = 5
 default_crossover_rate = 0.9
 default_mutation_rate = 0.1
-
-# GLOBAL VARIABLES
-kwargs = {}
 selectors = [var for var in dir(selector) if 'selection' in var]
 variators = [var for var in dir(variator) if 'variation' in var]
 replacers = [var for var in dir(replacer) if 'replacement' in var]
-results_path = 'results/single_optimization'
-final_schedule_path = results_path+'/final_schedule.xlsx'
-kwargs['results_path'] = results_path
-kwargs['source_path'] = 'courses.xlsx'
 courses = pd.read_excel(kwargs['source_path'])['COURSE OF STUDYING'].unique()
 last_selected_course = None
 fitness_list = None
