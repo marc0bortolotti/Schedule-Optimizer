@@ -34,3 +34,4 @@ You can choose among:
 
 ## Results
 ![Tux, the Linux mascot](/example_images/schedule.png)
+![Tux, the Linux mascot](/example_images/source.png)
