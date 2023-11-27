@@ -18,7 +18,6 @@ kwargs = {}
 # PATH
 results_path = 'results/single_optimization'
 final_schedule_path = results_path+'/final_schedule.xlsx'
-kwargs['results_path'] = results_path
 kwargs['source_path'] = 'source/courses.xlsx'
 
 # DEFAULT OPTIMIZATION PARAMETERS 
@@ -29,6 +28,7 @@ default_num_offspring = 100
 default_room_size = 5
 default_crossover_rate = 0.9
 default_mutation_rate = 0.1
+num_run = 0
 selectors = [var for var in dir(selector) if 'selection' in var]
 variators = [var for var in dir(variator) if 'variation' in var]
 replacers = [var for var in dir(replacer) if 'replacement' in var]
@@ -190,6 +190,9 @@ def update_output(run_optimization, max_generations , pop_size, num_offspring, r
         kwargs['selector'] = selected_selector
         kwargs['variator'] = selected_variator
         kwargs['replacer'] = selected_replacer
+        kwargs['result_path'] = result_path+'/run_'+str(num_run)
+
+        num_run+=1
 
         best_individual, population, fitness_list, diversity_list = run_ea(**kwargs)
 
