@@ -69,10 +69,10 @@ def save_schedule(individual, path, kwargs):
             for overlap in individual.room_overlap:
                 day = overlap['DAY']
                 hour = overlap['HOUR']
-                hour = overlap['ROOM']
+                room = overlap['ROOM']
                 c = sheet.cell(row = hour+1, column = day+1) 
                 if c.value is not None:
-                    if str(hour) in c.value: 
+                    if str(room) in c.value: 
                         c.fill = PatternFill(start_color='00FF0000', fill_type='solid')
 
 
