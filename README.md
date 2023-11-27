@@ -1,6 +1,6 @@
 # Schedule-Optimizer
 
-This script aims to propose an accademic schedule starting from a table of teachings from different courses of studying. The optimization is made by an Evolutionary Algorithm which explore the space of solutions by evolving the population to find the best ones in terms of fitness. The latter take into consideration different aspects of an accademic schedule. In particular, the fact that a teaching cannot be repeated in the same day or that there cannot be any overlapping of lessons or classrooms.
+The Schedule-Optimizer aims to design an accademic schedule starting from a table of teachings from different courses of studying. The optimization is made by an Evolutionary Algorithm which explore the space of solutions to find the best ones in terms of fitness. The latter take into consideration different aspects of an accademic schedule. In particular, the fact that a teaching cannot be repeated in the same day or that there cannot be any overlapping of lessons or classrooms.
 ## Requiremets
 Python packages:   
 - pylab
