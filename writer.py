@@ -65,6 +65,7 @@ def save_schedule(individual, path, kwargs):
         # # set rows height
         # for i in range(hour_size): sheet.row_dimensions[i+2].height = 70 
 
+        # color cell which room is already occupied
         if individual.room_overlap is not None:
             for overlap in individual.room_overlap:
                 day = overlap['DAY']
