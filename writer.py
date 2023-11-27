@@ -53,7 +53,7 @@ def save_schedule(individual, path, kwargs):
                 if c.value is not None: 
                     old_value = c.value 
                     if 'OVERLAP' in old_value: c.value =  str(old_value)+',\n'+value_tmp
-                    else: c.value =  'HOUR OVERLAP\n'+str(old_value)+',\n'+value_tmp
+                    else: c.value =  'HOUR OVERLAP:\n'+str(old_value)+',\n'+value_tmp
                     cell_color = '00FF0000' # if there is an overlap, cell_color = red
                 else: c.value =  value_tmp
                 c.fill = PatternFill(start_color=cell_color, fill_type='solid')
