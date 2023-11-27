@@ -7,7 +7,7 @@ if __name__ == "__main__":
     kwargs = {} 
     
     # PATH
-    kwargs['source_path'] = 'courses.xlsx'   
+    kwargs['source_path'] = 'source/courses.xlsx'   
     kwargs['results_path'] = 'results/single_optimization'
 
     # PARAMETERS
