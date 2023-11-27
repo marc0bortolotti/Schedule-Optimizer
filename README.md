@@ -41,7 +41,7 @@ You can choose among:
 ## Results
 The optimization outputs an excel file as the following:
 
-![Schedule](/example_images/final_schedule.png)
+![Schedule](/example_images/schedule.png)
 
 The number of printed schedules depends on the number of course of studying offered by the department and thus involved in the optimization to be sure that any room won't be occupated at the same time from teachings of different kinds of stydiyng. 
 An example of the source file is reported below. Note that columns' name are pre-defined and cannot be changed. On the other hand, you can add/remove/modify teachings as you prefer.
