@@ -15,7 +15,8 @@ Python packages:
 
 ## Usage
 Before running the optimization, be sure that the variable 'source_path' points to the correct file position.
-Note that, to make the script run correctly, the source file **MUST** have the same columns'name as in the example below. 
+Note that, to make the script run correctly, the source file **MUST** have the same columns'name as in the example below.
+On the other hand, you can add/remove/modify teachings as you prefer.
 Then, a single optimization can be simple made by running the following command from the command line:
 ```
 python main.py
@@ -43,7 +44,7 @@ The optimization outputs an excel file as the following:
 ![Schedule](/example_images/schedule.png)
 
 The number of printed schedules depends on the number of course of studying offered by the department and thus involved in the optimization to be sure that any room won't be occupated at the same time from teachings of different kinds of stydiyng. 
-Below an example of the source file is reported. Note that columns' name are pre-defined and cannot be changed. On the other hand, you can add/remove/modify teachings as you prefer.
+An example of the source file is reported below. Note that columns' name are pre-defined and cannot be changed. On the other hand, you can add/remove/modify teachings as you prefer.
 
 ![Source](/example_images/source.png)
 
