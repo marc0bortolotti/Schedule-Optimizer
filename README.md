@@ -33,4 +33,4 @@ You can choose among:
 - 
 
 ## Results
-![Tux, the Linux mascot](/assets/images/tux.png)
+![Tux, the Linux mascot](/example_images/schedule.png)
