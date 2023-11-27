@@ -190,7 +190,7 @@ def update_output(run_optimization, max_generations , pop_size, num_offspring, r
         kwargs['selector'] = selected_selector
         kwargs['variator'] = selected_variator
         kwargs['replacer'] = selected_replacer
-        kwargs['result_path'] = result_path+'/run_'+str(num_run)
+        kwargs['result_path'] = results_path+'/run_'+str(num_run)
 
         num_run+=1
 
