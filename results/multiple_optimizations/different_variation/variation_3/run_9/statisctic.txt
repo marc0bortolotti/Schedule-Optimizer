@@ -1,0 +1,38 @@
+OPTIMIZATION PARAMETERS:
+source_path = courses.xlsx
+results_path = results/different_variation/variation_3/run_9
+analisy_type = different_variation
+num_runs = 10
+num_offspring = 20
+pop_size = 20
+max_generations = 10
+room_size = 40
+mutation_rate = 0.1
+crossover_rate = 0.9
+selector = tournament_selection
+variator = variation_3
+replacer = plus_replacement
+tournament_size = 8
+experiment_type = variation_3
+hour_size = 11
+day_size = 5
+source_df =                TEACHING  ID  CFU COURSE OF STUDYING       TYPE  ROOM   DAY  HOUR
+0               Analisi   0    6         INGEGNERIA  MANDATORY  None  None  None
+1        Programmazione   1    6         INGEGNERIA  MANDATORY  None  None  None
+2              Economia   2   12           ECONOMIA  OPZIONALE  None  None  None
+3    Gestione Aziendale   3    9           ECONOMIA  MANDATORY  None  None  None
+4       Computer Vision   4    9         INGEGNERIA  OPZIONALE  None  None  None
+5   Recognition Systems   5    6         INGEGNERIA  OPZIONALE  None  None  None
+6              Business   6    6           ECONOMIA  MANDATORY  None  None  None
+7             Geografia   7   12            LETTERE  OPZIONALE  None  None  None
+8     Lettere Classiche   8    6            LETTERE  MANDATORY  None  None  None
+9             Filologia   9    6            LETTERE  MANDATORY  None  None  None
+10      Lettere Antiche  10    6            LETTERE  OPZIONALE  None  None  None
+num_selected = 20
+
+
+OPTIMIZATION STATISTICS:
+Best Fitness: 0
+Number of rooms overlapped: []
+Number of lessons overlapped: 0
+Number of mandatory teachings overlapped: 0
