@@ -5,8 +5,8 @@ from individual import *
 from pylab import *
 import cv2
 
-default_results_path = 'results'
-default_sources_path = 'courses.xlsx' 
+default_results_path = 'results/multiple_optimizations'
+default_sources_path = 'source/courses.xlsx' 
 
 if __name__ == '__main__':
 
