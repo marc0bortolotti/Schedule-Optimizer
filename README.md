@@ -53,7 +53,7 @@ Furthermore, you can also visualize:
 - the final population (final_population.xlsx)
 - the initial schedule (initial_schedule.xlsx)
 - the fitness graph (fitness.png)
-- the diversity graoh (diversity.png)
+- the diversity graph (diversity.png)
 - summary of the optimization (statisctics.txt)
 
 If you run multiple optimizations, you can visualize also a boxplot (i.e. Best_Variation in /results/multiple_optimizations/different_variation)
