@@ -16,7 +16,7 @@ Python packages:
 ## Usage
 Before running the optimization, be sure that the variable 'source_path' points to the correct file position.
 Note that, to make the script run correctly, the source file **MUST** have the same columns'name as in the example below.
-On the other hand, you can add/remove/modify teachings as you prefer.
+On the other hand, you can add/remove/modify teachings as you prefer. Of course also optimization's parameters can be changed.
 Then, a single optimization can be simple made by running the following command from the command line:
 ```
 python main.py
