@@ -26,7 +26,7 @@ Run the following command and open the link that appears to launch the dashboard
 ```
 python dashboard.py
 ```
-If you want to verify the performance of different sets of parameters, run the multiple optimizations script:
+Finally, if you want to verify the performance of different sets of parameters, run the multiple optimizations script:
 ```
 python multiple_optimizations.py
 ```
