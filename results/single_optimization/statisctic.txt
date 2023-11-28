@@ -13,7 +13,8 @@ variator = variation_2
 replacer = plus_replacement
 hour_size = 11
 day_size = 5
-source_df =                TEACHING  ID  CFU COURSE OF STUDYING       TYPE  ROOM   DAY  HOUR
+source_df =                
+               TEACHING  ID  CFU COURSE OF STUDYING       TYPE  ROOM   DAY  HOUR
 0               Analisi   0    6         INGEGNERIA  MANDATORY  None  None  None
 1        Programmazione   1    6         INGEGNERIA  MANDATORY  None  None  None
 2              Economia   2   12           ECONOMIA  OPZIONALE  None  None  None
