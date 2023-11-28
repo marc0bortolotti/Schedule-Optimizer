@@ -133,8 +133,10 @@ def save_diversity(diversity_list, path):
 def save_statistics(best_individual, kwargs, path):
     with open(path, 'w') as f:
         f.write('OPTIMIZATION PARAMETERS:\n')
-        for k, v in kwargs.items():
-            f.write(k+' = '+str(v)+'\n')
+        if(k == 'source_df'): 
+                f.write(k+' =\n'+str(v)+'\n')
+            else: 
+                f.write(k+' = '+str(v)+'\n')
         f.write('\n\nOPTIMIZATION STATISTICS:\n')
         f.write('Best Fitness: '+str(best_individual.fitness))
         f.write('\nNumber of rooms overlapped: '+str(best_individual.room_overlap))
