@@ -125,7 +125,8 @@ def output():
             day = days[overlap['DAY']-1]
             hour = str(7+overlap['HOUR'])+':30 - '+str(8+overlap['HOUR'])+':30'
             room = 'ROOM '+str(overlap['ROOM']) 
-            str_tmp = room+': '+day+', '+hour
+            occurrence = 'OCCURRENCE: '+str(overlap['OCCURRENCE'])
+            str_tmp = room+': '+day+', '+hour+', '+occurrence
             statistics_2.append(html.H6(str_tmp, style={'color': 'gray', 'text-align': 'left'}))
 
     children = dbc.Container([title_1,
