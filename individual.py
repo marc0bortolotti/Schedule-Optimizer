@@ -166,10 +166,9 @@ def fitness(population):
                 # overlap in rooms
                 counter_aule = Counter(df_overlap['ROOM'].to_list())    
                 for room in counter_aule: 
-                    occurence = counter_aule[room]
-                    if occurence>1: 
-                        for i in range(occurence-1): 
-                            room_overlap.append({'DAY' : day, 'HOUR': hour, 'ROOM' : room})
+                    occurrence = counter_aule[room]
+                    if occurrence>1: 
+                        room_overlap.append({'DAY' : day, 'HOUR': hour, 'ROOM' : room, 'OCCURRENCE' : occurrence})
                             
                             
                 for course_of_studying in df_overlap['COURSE OF STUDYING'].unique():
