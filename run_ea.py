@@ -5,6 +5,7 @@ from writer import *
 from individual import *
 from diversity import calculate_diversity
 import os
+from datetime import datetime
 
 
 default_source_path = 'courses.xlsx'
@@ -12,6 +13,8 @@ default_results_path = 'results'
 
 
 def run_ea(**kwargs):
+
+    start_time = datetime.now()
 
     hour_size = kwargs.setdefault('hour_size', 11)
     day_size = kwargs.setdefault('day_size', 5)
@@ -80,6 +83,10 @@ def run_ea(**kwargs):
     save_fitness(fitness_list, fitness_path)
     save_diversity(diversity_list, diversity_path)
     save_statistics(best_individual, kwargs, statistics_path)
-    print('\n\n\n')
+
+    end_time = datetime.now()
+    kwargs['time'] = end_time - start_time
+
+    print('\nTime:', kwargs['time'], '\n\n\n')
 
     return best_individual, population, fitness_list, diversity_list
