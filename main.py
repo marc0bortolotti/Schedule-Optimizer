@@ -26,17 +26,15 @@ if __name__ == "__main__":
     # kwargs['tournament_size'] = 5 # for tournament_selection()
     # kwargs['num_selected'] = 10 # for truncation_selection()
 
-    start_time = datetime.now()
+    
     best_individual, population, fitness_list, diversity_list = run_ea(**kwargs)
-    end_time = datetime.now()
 
 
     print('Best Fitness:', best_individual.fitness)
     print('Overlaps in rooms:', best_individual.room_overlap)
     print('Overlaps of lessons:', best_individual.hour_overlap)
     print('Overlaps in mandatory teachings:', best_individual.type_overlap)
-
-    print('\nTime:', end_time - start_time)
+    print('\n\n')
 
     
     # SHOW FITNESS and DIVERSITY
