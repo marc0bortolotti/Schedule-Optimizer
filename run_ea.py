@@ -71,6 +71,10 @@ def run_ea(**kwargs):
         diversity_list.append(calculate_diversity(population))
         iter+=1
     
+    end_time = datetime.now()
+    kwargs['time'] = end_time - start_time
+
+    print('\nTime:', kwargs['time'])
 
     # SAVE RESULTS
     print('\nSAVING RESULTS...')
@@ -83,10 +87,6 @@ def run_ea(**kwargs):
     save_fitness(fitness_list, fitness_path)
     save_diversity(diversity_list, diversity_path)
     save_statistics(best_individual, kwargs, statistics_path)
-
-    end_time = datetime.now()
-    kwargs['time'] = end_time - start_time
-
-    print('\nTime:', kwargs['time'], '\n\n\n')
+    print('\n\n\n')
 
     return best_individual, population, fitness_list, diversity_list
