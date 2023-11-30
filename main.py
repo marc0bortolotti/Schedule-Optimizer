@@ -1,5 +1,7 @@
 from run_ea import run_ea
 import cv2
+from datetime import datetime
+
 
 
 if __name__ == "__main__":
@@ -8,13 +10,13 @@ if __name__ == "__main__":
     
     # PATH
     kwargs['source_path'] = 'source/courses.xlsx'   
-    kwargs['results_path'] = 'results/single_optimization'
+    kwargs['results_path'] = 'results/single_optimization/'+datetime.now().strftime('%Y.%m.%d-%H.%M.%S')
 
     # PARAMETERS
-    kwargs['num_offspring'] = 2
-    kwargs['pop_size'] = 3
-    kwargs['max_generations'] = 2
-    kwargs['room_size'] = 40
+    kwargs['num_offspring'] = 100
+    kwargs['pop_size'] = 20
+    kwargs['max_generations'] = 50
+    kwargs['room_size'] = 20
     kwargs['mutation_rate'] = 0.1
     kwargs['crossover_rate'] = 0.9
     kwargs['selector'] = 'tournament_selection'
@@ -24,12 +26,17 @@ if __name__ == "__main__":
     # kwargs['tournament_size'] = 5 # for tournament_selection()
     # kwargs['num_selected'] = 10 # for truncation_selection()
 
+    start_time = datetime.now()
     best_individual, population, fitness_list, diversity_list = run_ea(**kwargs)
+    end_time = datetime.now()
+
 
     print('Best Fitness:', best_individual.fitness)
     print('Overlaps in rooms:', best_individual.room_overlap)
     print('Overlaps of lessons:', best_individual.hour_overlap)
     print('Overlaps in mandatory teachings:', best_individual.type_overlap)
+
+    print('\nTime:', end_time - start_time)
 
     
     # SHOW FITNESS and DIVERSITY
