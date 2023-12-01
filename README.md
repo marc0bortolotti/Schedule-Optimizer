@@ -39,7 +39,7 @@ You can choose among:
 - 'different_replacement'
 
 ## Results
-The optimization outputs an excel file ('final_schedule.xlsx') which looks as the following:
+The optimization outputs an excel file (final_schedule.xlsx) which looks as the following:
 
 ![Schedule](/example_images/final_schedule.png)
 
@@ -55,5 +55,6 @@ Furthermore, you can also visualize:
 - the fitness graph (fitness.png)
 - the diversity graph (diversity.png)
 - summary of the optimization (statisctics.txt)
+- the best individual (best_individual.xlsx)
 
 If you run multiple optimizations, you can visualize also a boxplot (i.e. Best_Variation in /results/multiple_optimizations/different_variation)
