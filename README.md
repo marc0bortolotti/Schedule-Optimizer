@@ -43,7 +43,7 @@ The optimization outputs an excel file ('final_schedule.xlsx') which looks as th
 
 ![Schedule](/example_images/final_schedule.png)
 
-The number of printed schedules depends on the number of courses of studying offered by the department and thus involved in the optimization to be sure that any room won't be occupied at the same time by teachings of different kinds of studies. 
+The number of printed timetables depends on the number of courses of study offered by the department and thus involved in the optimization to be sure that any room won't be occupied at the same time by teachings of different kinds of studies. 
 An example of the source file is reported below. Note that columns' name are pre-defined and cannot be changed. On the other hand, you can add/remove/modify teachings as you prefer.
 
 ![Source](/example_images/source.png)
