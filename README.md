@@ -39,7 +39,7 @@ You can choose among:
 - 'different_replacement'
 
 ## Results
-The optimization outputs an excel file as the following:
+The optimization outputs an excel file ('final_schedule.xlsx') which looks as the following:
 
 ![Schedule](/example_images/final_schedule.png)
 
